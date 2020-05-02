@@ -1,15 +1,15 @@
-import React from 'react';
-import './App.css';
-import Header from './components/header/Header'
-import Footer from './components/footer/Footer'
-import routes from './routes';
+import React from "react";
+import "./App.scss";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import routes from "./routes";
 
 function App() {
   return (
     <div className="App">
       <Header />
       {routes}
-    <Footer/>
+      <Footer />
     </div>
   );
 }
