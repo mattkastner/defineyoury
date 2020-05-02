@@ -1,9 +1,14 @@
 import React from 'react';
+import Descriptions from '../components/product/Descriptions';
+import ProductList from '../components/product/ProductList'
+import Stories from '../components/product/Stories'
 
 function Product(props) {
     return (
         <div>
-            Product.js
+            <ProductList />
+            <Stories />
+            <Descriptions />
         </div>
     );
 }
