@@ -1,11 +1,14 @@
+@import "../../utilities/style.scss";
+
 .header__nav {
-    width: 100vw;
-    height: 60px;
-    background-color: #000000;
-    display: flex;
-    align-items: center;
-    .title {
-        font-size: 16px;
-        color: #A0A0A0;
+  font-family: $font-family__primary;
+  width: 100vw;
+  height: 60px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  .title {
+    font-size: 16px;
+    color: #a0a0a0;
   }
 }

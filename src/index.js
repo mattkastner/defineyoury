@@ -1,9 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import 'reset-css';
-import { HashRouter } from 'react-router-dom';
+// React specific components
+import React from "react";
+import ReactDOM from "react-dom";
+import { HashRouter } from "react-router-dom";
 
+// Styling imports
+import "reset-css";
+import "./utilities/style.scss";
+
+// Components
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,5 +16,5 @@ ReactDOM.render(
       <App />
     </HashRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
