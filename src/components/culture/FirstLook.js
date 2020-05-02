@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Culture(props) {
+function FirstLook(props) {
     return (
         <div>
-            Culture.js
+            FirstLook.js
         </div>
     );
 }
 
-export default Culture;
+export default FirstLook;

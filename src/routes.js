@@ -1,9 +1,9 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Culture from './components/culture/Culture'
-import Product from './components/product/Product'
-import Business from './components/business/Business'
-import Training from './components/training/Training'
+import Culture from './views/Culture'
+import Product from './views/Product'
+import Business from './views/Business'
+import Training from './views/Training'
 import ProductShare from './components/productShare/ProductShare'
 
 export default (
