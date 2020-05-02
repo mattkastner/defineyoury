@@ -1,10 +1,11 @@
 .header__nav {
     width: 100vw;
-    height: 80px;
-    background-color: #333333;
+    height: 60px;
+    background-color: #000000;
     display: flex;
-        align-items: center;
-    .header__title {
-        
+    align-items: center;
+    .title {
+        font-size: 16px;
+        color: #A0A0A0;
   }
 }
