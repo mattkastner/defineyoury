@@ -1,15 +1,13 @@
 @import "../../../utilities/style.scss";
 
 .navigation {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  @include flex(flex-end);
+
   ul {
     width: 500px;
     height: 40px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    @include flex(flex-end);
+
     li {
       font-size: 11px;
       color: $header-font--color;

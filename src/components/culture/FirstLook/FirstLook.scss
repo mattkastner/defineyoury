@@ -1,0 +1,24 @@
+@import "../../../utilities/style.scss";
+
+.culture-view--first-look {
+  position: relative;
+  height: 550px;
+  width: 100%;
+  overflow: hidden;
+  @include flex();
+  .first-look--text {
+      font-family: $font-family--primary;
+
+
+
+  }
+
+  .hiking-woman {
+    position: absolute;
+    width: 2100px;
+    height: auto;
+    left: 0px;
+    top: -350px;
+    z-index: -1;
+  }
+}

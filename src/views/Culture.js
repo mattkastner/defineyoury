@@ -1,5 +1,5 @@
 import React from 'react';
-import FirstLook from '../components/culture/FirstLook'
+import FirstLook from '../components/culture/FirstLook/FirstLook'
 import ProductVideos from '../components/culture/ProductVideos'
 import CultureText from '../components/culture/CultureText'
 import ActionCalls from '../components/culture/ActionCalls';
