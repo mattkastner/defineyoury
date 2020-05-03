@@ -1,0 +1,15 @@
+@import "../../../utilities/style.scss";
+
+.general-button--yellow {
+    @include flex(space-evenly);
+    border: none;
+    height: 34px;
+    width: 164px;
+    border-radius: 3px;
+    color: white;
+    background-color: $accent;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}

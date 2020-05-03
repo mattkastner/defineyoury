@@ -2,5 +2,11 @@
   display: flex;
   justify-content: $justify;
   align-items: $align;
-  flex-direction: wrap;
+  flex-wrap: wrap;
+}
+
+@mixin flex-row($sa: space-around, $c: center) {
+	display: flex;
+	justify-content: $sa;
+	align-items: $c;
 }
