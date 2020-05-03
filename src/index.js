@@ -5,7 +5,7 @@ import { HashRouter } from "react-router-dom";
 
 // Styling imports
 import "reset-css";
-import "./utilities/style.scss";
+import "./index.scss"
 
 // Components
 import App from "./App";

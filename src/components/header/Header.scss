@@ -5,12 +5,10 @@
   width: 100vw;
   height: 60px;
   background-color: #000000;
-  display: flex;
-  justify-content: space-around;
+  @include flex(space-around);
+
   .nav__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(space-between);
     width: $content-width;
     .title {
       font-size: 17px;
