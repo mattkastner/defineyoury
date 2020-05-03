@@ -7,7 +7,7 @@ import Training from "./views/Training";
 
 export default (
   <Switch>
-    <Route exact path="/" component={Culture} />
+    <Route exact path="/culture" component={Culture} />
     <Route path="/culture/share" component={Culture} />
     <Route exact path="/product" component={Product} />
     <Route path="/product/share" component={Product} />

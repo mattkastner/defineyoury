@@ -1,0 +1,25 @@
+@import "../../../utilities/style.scss";
+
+.nav-link {
+  position: relative;
+  height: 15px;
+  &:hover {
+    .nav-indicator {
+      background-color: $accent;
+      width: 100%;
+    }
+  }
+  .nav-indicator {
+    position: absolute;
+    bottom: -2.5px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    transition: width 400ms;
+  }
+
+  .underline {
+    background-color: $accent;
+    width: 100%;
+  }
+}

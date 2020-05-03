@@ -1,3 +1,5 @@
+@import "../../../utilities/style.scss";
+
 .navigation {
   display: flex;
   justify-content: flex-end;
@@ -8,11 +10,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    .nav-link {
-      text-decoration: none !important;
-    }
     li {
-      color: white;
+      font-size: 11px;
+      color: $header-font--color;
     }
   }
 }

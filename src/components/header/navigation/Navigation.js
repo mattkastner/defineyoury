@@ -7,20 +7,22 @@ import UnstyledLink from "./UnstyledLink";
 //import the styling
 import "./Navigation.scss";
 
+
+
 function Navigation(props) {
   return (
     <nav className="navigation">
       {props.location.pathname.includes("/share") ? (
         <ul>
           <UnstyledLink to={{ pathname: "/share" }} name="Culture" />
-          <UnstyledLink to={{ pathname: "/products/share" }} name="products" />
+          <UnstyledLink to={{ pathname: "/products/share" }} name="Products" />
         </ul>
       ) : (
         <ul>
-          <UnstyledLink to={{ pathname: "/culture" }} name="culture" />
-          <UnstyledLink to={{ pathname: "/products" }} name="products" />
-          <UnstyledLink to={{ pathname: "/business" }} name="business" />
-          <UnstyledLink to={{ pathname: "/training" }} name="training" />
+          <UnstyledLink to={{ pathname: "/culture" }} name="Culture" />
+          <UnstyledLink to={{ pathname: "/products" }} name="Products" />
+          <UnstyledLink to={{ pathname: "/business" }} name="Business" />
+          <UnstyledLink to={{ pathname: "/training" }} name="Training" />
         </ul>
       )}
     </nav>
