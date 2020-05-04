@@ -25,10 +25,15 @@
 	color: #989898;
 }
 
+.list-container {
+	margin-bottom: 45px;
+}
 .quick-links {
 	line-height: 30px;
 	color: #989898;
-	margin-bottom: 45px;
+}
+.quick-links:hover {
+	color: $accent;
 }
 
 .social-media-links {
@@ -45,6 +50,18 @@
 
 .fa-instagram {
 	@include social-media-icons;
+}
+
+.fa-facebook-f:hover {
+	color: $accent;
+}
+
+.fa-twitter:hover {
+	color: $accent;
+}
+
+.fa-instagram:hover {
+	color: $accent;
 }
 
 .all-rights-reserved-container {
