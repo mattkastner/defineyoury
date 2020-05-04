@@ -1,11 +1,15 @@
 @import "../../utilities/style.scss";
 
 .header__nav {
+  position: sticky;
+  z-index: 2;
+  top: 0;
   font-family: $font-family__primary;
   width: 100vw;
   height: 60px;
   background-color: #000000;
   @include flex(space-around);
+  transition: height 200ms;
 
   .nav__container {
     @include flex(space-between);
@@ -15,4 +19,8 @@
       color: $header-font--color;
     }
   }
+}
+
+.header__nav.shrink {
+  height: 40px;
 }
