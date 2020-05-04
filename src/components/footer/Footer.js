@@ -18,11 +18,11 @@ function Footer(props) {
                 </div>
                 <div className="quick-links-container">
                     <h1 className="footer-topics">Quick Links</h1>
-                    <ul className='quick-links'>
-                        <li>Culture</li>
-                        <li>Products</li>
-                        <li>Business</li>
-                        <li>Training</li>
+                    <ul className='list-container' >
+                        <li className="quick-links">Culture</li>
+                        <li className="quick-links">Products</li>
+                        <li className="quick-links">Business</li>
+                        <li className="quick-links">Training</li>
                     </ul>
                 </div>
                 <h1 className="social-media-container">
