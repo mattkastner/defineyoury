@@ -1,12 +1,16 @@
 import React from "react";
 
+// components
+import ProductDisplay from "./ProductDisplay";
+
 // style
 import "./ProductVideos.scss";
 
 function ProductVideos(props) {
   return (
     <section className="product-videos__container">
-      <div>
+      <div className="top-text">
+        <div className="light-gray--cover"></div>
         <h3>We are all in this together</h3>
         <p>
           After cleansing and balancing, your body now has the foundation it
@@ -17,7 +21,24 @@ function ProductVideos(props) {
           products in over 50 countries!
         </p>
       </div>
-      <div>ProductVideos</div>
+      <div className="product-videos">
+        <ProductDisplay
+          text="A unique approach to health that combines products, simple core principles, and supporting tools to help you embrace a metabolically healthy lifestyle."
+          header="Activate"
+        />
+        <ProductDisplay
+          text="A unique and patented nutritional formula helps you stabilize blood sugar levels, lower cholesterol and lose weight.  BILLIONS in sales!"
+          header="Balance/Bios Life"
+        />
+        <ProductDisplay
+          text="A time-tested formula that cleanses your system of unhealthy toxins and parasites."
+          header="Cleanse"
+        />
+        <ProductDisplay
+          text="A rare superfood that speeds up your metabolism, increase energy and improve mental clarity and focus."
+          header="Matcha/Bios Life E"
+        />
+      </div>
     </section>
   );
 }
