@@ -1,17 +1,56 @@
-@import '../../utilities/style.scss';
+@import "../../utilities/style.scss";
 
-.footer-body{
-    width:100%;
-    height: 35vh;
-    background-color: $dark;
-    @include flex-row
-
+.footer-body {
+	width: 100%;
+	height: 40vh;
+	background-color: $dark;
+	font-family: inter, sans-serif;
 }
 
-.footer-topics{
-    font-size: 1.4rem;
-    font-family: sans-serif;
-    font-weight: 400;
-    color: #ffffff
+.section-container {
+	padding-top: 50px;
+	@include flex-row;
+}
 
+.footer-topics {
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #ffffff;
+	padding-bottom: 20px;
+}
+
+.about-us-text {
+	width: 200px;
+	line-height: 30px;
+	color: #989898;
+}
+
+.quick-links {
+	line-height: 30px;
+	color: #989898;
+	margin-bottom: 45px;
+}
+
+.social-media-links {
+	margin-bottom: 130px;
+}
+
+.fa-facebook-f {
+	@include social-media-icons;
+}
+
+.fa-twitter {
+	@include social-media-icons;
+}
+
+.fa-instagram {
+	@include social-media-icons;
+}
+
+.all-rights-reserved-container {
+	color: #989898;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 45px;
 }
