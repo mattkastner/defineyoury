@@ -1,12 +1,23 @@
 @mixin flex($justify: flex-start, $align: center) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-  flex-wrap: wrap;
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-wrap: wrap;
 }
 
-@mixin flex-row($sa: space-around, $c: center) {
+@mixin flex-row($sa: space-evenly, $c: center) {
 	display: flex;
 	justify-content: $sa;
 	align-items: $c;
+}
+
+// footer
+@mixin social-media-icons(
+	$fontSize: 30px,
+	$paddingRight: 20px,
+	$color: #989898
+) {
+	font-size: $fontSize;
+	padding-right: $paddingRight;
+	color: $color;
 }
