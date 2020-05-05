@@ -1,0 +1,36 @@
+@import "../../../utilities/style.scss";
+
+.tablePic {
+	width: 100%;
+	height: 75vh;
+}
+
+.business-text-container {
+	position: absolute;
+	width: 700px;
+	height: 100%;
+	right: 0;
+}
+
+.business-text-container h1 {
+	color: $light;
+	font-size: 49px;
+	font-weight: 400;
+	font-family: $font-family__primary;
+	position: absolute;
+	top: 160px;
+	left: 65px;
+	line-height: 70px;
+}
+
+.business-text-container span {
+	color: $accent;
+}
+
+.business-text-container p {
+	position: absolute;
+	top: 340px;
+	font-size: 18px;
+	line-height: 27px;
+	color: $light;
+}
