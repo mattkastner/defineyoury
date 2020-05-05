@@ -1,17 +1,15 @@
-@import '../../utilities/style.scss';
+@import "../../utilities/style.scss";
 
-.footer-body{
-    width:100%;
-    height: 35vh;
-    background-color: $dark;
-    @include flex-row
-
+.footer-body {
+  width: 100%;
+  height: 35vh;
+  background-color: $dark;
+  @include flex-row;
 }
 
-.footer-topics{
-    font-size: 1.4rem;
-    font-family: sans-serif;
-    font-weight: 400;
-    color: #ffffff
-
+.footer-topics {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #ffffff;
 }
