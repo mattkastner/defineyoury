@@ -19,21 +19,21 @@ function Footer(props) {
                 <div className="quick-links-container">
                     <h1 className="footer-topics">Quick Links</h1>
                     <ul className='list-container' >
-                        <Link to='/'>
+                        <Link to='/' style={{ textDecoration: 'none' }}>
 
                             <h3 className="quick-links">Culture</h3>
                         </Link>
-                        <Link to='/products'>
+                        <Link to='/products' style={{ textDecoration: 'none' }}>
                             <h3
                                 className="quick-links">Products
 
                         </h3>
                         </Link>
-                        <Link to='/business' >
+                        <Link to='/business' style={{ textDecoration: 'none' }}>
 
                             <h3 className="quick-links">Business</h3>
                         </Link>
-                        <Link to='training'>
+                        <Link to='/training' style={{ textDecoration: 'none' }}>
                             <h3 className="quick-links">Training</h3>
                         </Link>
                     </ul>
@@ -59,7 +59,7 @@ function Footer(props) {
                 </div>
             </div>
 
-        </section>
+        </section >
     );
 }
 
