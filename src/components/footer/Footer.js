@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom'
 
 import "./footer.scss";
 
@@ -19,10 +19,23 @@ function Footer(props) {
                 <div className="quick-links-container">
                     <h1 className="footer-topics">Quick Links</h1>
                     <ul className='list-container' >
-                        <li className="quick-links">Culture</li>
-                        <li className="quick-links">Products</li>
-                        <li className="quick-links">Business</li>
-                        <li className="quick-links">Training</li>
+                        <Link to='/'>
+
+                            <h3 className="quick-links">Culture</h3>
+                        </Link>
+                        <Link to='/products'>
+                            <h3
+                                className="quick-links">Products
+
+                        </h3>
+                        </Link>
+                        <Link to='/business' >
+
+                            <h3 className="quick-links">Business</h3>
+                        </Link>
+                        <Link to='training'>
+                            <h3 className="quick-links">Training</h3>
+                        </Link>
                     </ul>
                 </div>
                 <h1 className="social-media-container">
