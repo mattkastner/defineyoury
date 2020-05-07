@@ -8,7 +8,7 @@
 .text-button-container {
 	position: absolute;
 	width: 700px;
-	height: 100%;
+	height: 75vh;
 	right: 0;
 }
 .business-text-container {
@@ -59,4 +59,32 @@
 
 .join-now-button:hover {
 	background-color: $dark;
+}
+
+@media (max-width: 500px) {
+	.text-button-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.business-text-container {
+		display: flex;
+		justify-content: center;
+		height: 380px;
+	}
+
+	.business-text-container h1 {
+		width: 270px;
+		font-size: 35px;
+		line-height: 40px;
+	}
+	.join-now-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 50px;
+	}
 }
