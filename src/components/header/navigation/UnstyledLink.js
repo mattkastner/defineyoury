@@ -6,7 +6,7 @@ import "./UnstyledLink.scss";
 function UnstyledLink(props) {
   console.log(props.location.pathname.includes(props.name.toLowerCase()));
   return (
-    <Link to={props.to} style={{ textDecoration: "none", position: "relative", marginLeft: "25px" }}>
+    <Link to={props.to} style={{ textDecoration: "none", position: "relative" }}>
       <li className="nav-link">
         {props.name}
       <div className={

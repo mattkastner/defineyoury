@@ -6,56 +6,54 @@
   width: 100%;
   overflow: hidden;
   @include flex(space-around);
+}
 
-  .left-gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 974px;
-    height: 895px;
+.left-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 974px;
+  height: 895px;
 
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0) 100%
-    );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.first-look__container {
+  width: $content-width__laptop;
+  @include flex();
+}
+.text-container {
+  position: relative;
+  @include flex();
+
+  height: 350px;
+  width: 500px;
+  font-family: $font-family--primary;
+}
+h4 {
+  color: $light;
+  font-size: 49px;
+  font-weight: 400;
+  line-height: 70px;
+  span {
+    color: $accent;
   }
+}
+p {
+  color: $secondary-light;
+  font-size: 18px;
+  line-height: 27px;
+}
 
-  .first-look__container {
-    width: $content-width;
-    @include flex();
-
-    .text-container {
-      position: relative;
-      @include flex();
-
-      height: 350px;
-      width: 500px;
-      font-family: $font-family--primary;
-
-      h4 {
-        color: $light;
-        font-size: 49px;
-        font-weight: 400;
-        line-height: 70px;
-        span {
-          color: $accent;
-        }
-      }
-      p {
-        color: $secondary-light;
-        font-size: 18px;
-        line-height: 27px;
-      }
-    }
-  }
-
-  .hiking-woman {
-    position: absolute;
-    width: 2100px;
-    height: auto;
-    left: 0px;
-    top: -350px;
-    z-index: -1;
-  }
+.hiking-woman {
+  position: absolute;
+  width: 2100px;
+  height: auto;
+  left: 0px;
+  top: -350px;
+  z-index: -1;
 }
