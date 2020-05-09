@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from "react-player"
 
 import './businessVideoDisplay.scss'
 
@@ -9,9 +10,8 @@ function BusinessVideosDisplay(props) {
                 <h1>
                     {props.text}
                 </h1>
-                <video src={props.src} width='320' height='240' controls
-                >
-                </video>
+                <ReactPlayer url={props.url} width='320' height='240' controls
+                />
 
             </div>
         </div>
