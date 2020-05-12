@@ -18,13 +18,13 @@ function Navigation(props) {
           <UnstyledLink to={{ pathname: "/products/share" }} name="Products" />
         </ul>
       ) : (
-        <ul>
-          <UnstyledLink to={{ pathname: "/culture" }} name="Culture" />
-          <UnstyledLink to={{ pathname: "/products" }} name="Products" />
-          <UnstyledLink to={{ pathname: "/business" }} name="Business" />
-          <UnstyledLink to={{ pathname: "/training" }} name="Training" />
-        </ul>
-      )}
+          <ul>
+            <UnstyledLink to={{ pathname: "/culture" }} name="Culture" />
+            <UnstyledLink to={{ pathname: "/product" }} name="Products" />
+            <UnstyledLink to={{ pathname: "/business" }} name="Business" />
+            <UnstyledLink to={{ pathname: "/training" }} name="Training" />
+          </ul>
+        )}
     </nav>
   );
 }

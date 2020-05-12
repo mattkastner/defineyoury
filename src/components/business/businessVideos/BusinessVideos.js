@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './businessVideos.scss'
 import BusinessVideosDisplay from './BusinessVideosDisplay';
+
 
 function BusinessVideos(props) {
     return (
@@ -9,7 +10,7 @@ function BusinessVideos(props) {
                 <h1 className='our-stories'>
                     Our Stories
                     </h1>
-                <div className='business-video-container'>
+                <div className='business-video-container'  >
 
                     <div className='business-videos'>
                         <BusinessVideosDisplay
