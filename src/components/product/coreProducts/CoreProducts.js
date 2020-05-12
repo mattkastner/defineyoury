@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Stories(props) {
+function CoreProducts(props) {
     return (
         <div>
-            Stories.js
+            Core
         </div>
     );
 }
 
-export default Stories;
+export default CoreProducts;
