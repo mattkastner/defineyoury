@@ -1,0 +1,45 @@
+@import "../../../utilities/style.scss";
+
+.section5 {
+    height: 380px;
+    @include flex(space-evenly);
+}
+
+.action-container {
+    height: 230px;
+    width: 450px;
+    background: white;
+    border-radius: 4px;
+    @include flex(space-around, center);
+}
+
+.action {
+    height: 45%;
+    width: 75%;
+    @include flex(space-around, center);
+
+    p {
+        margin-top: 10px;
+        font-family: $font-family__primary;
+        font-size: 14px;
+        color: $dark;
+        text-align: center;
+    }
+}
+
+.brand-customer__btns {
+    cursor: pointer;
+    width: 140px;
+    height: 35px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+
+.dark {
+    background-color: $dark;
+}
+
+.yellow {
+    background-color: $accent;
+}

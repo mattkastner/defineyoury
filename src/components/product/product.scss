@@ -1,0 +1,91 @@
+
+/* ****************** */
+/*! Products page */
+/* ****************** */
+
+// Colors
+$header: #000000;
+$accent: rgb(224, 216, 0);
+$light: #F2F2F2;
+$secondary-light: #c4c4c4;
+
+
+
+
+
+.first {
+    background-color: $light;
+    margin: 80px 0 80px 80px;
+  }
+  
+  .buy {
+    padding: 30px 170px;
+    font-size: 48px;
+  }
+  .buyBtn {
+    font-size: 24px;
+    background: $accent;
+    border-radius: 10px;
+    width: 170px;
+    color: white;
+  }
+  .pheading {
+    font-weight: 900;
+    font-size: 2.5rem;
+    color:$header;
+    padding: 10px;
+    margin-top: 100px;
+    font-family: "Open Sans";
+  }
+  
+  .ptext {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0 10px 50px 10px;
+    color:  $header;
+  }
+  
+  .pbutton {
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 36px;
+    color: $secondary-light;
+    border-radius: 10px;
+  }
+  /* ? cards */
+.box {
+  border: none;
+  outline: hidden;
+  background: transparent;
+  width: 18rem;
+}
+.images {
+  position: relative;
+}
+.btnimg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 70px;
+}
+.imgcard {
+  height: 250px;
+  background-color: $light;
+}
+
+.title {
+  font-size: 30px;
+  color: $header;
+}
+
+.description {
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  color: $secondary-light;
+}

@@ -1,18 +1,21 @@
-import React from 'react';
-import FirstLook from '../components/culture/FirstLook/FirstLook'
-import ProductVideos from '../components/culture/ProductVideos/ProductVideos'
-import CultureText from '../components/culture/CultureText'
-import ActionCalls from '../components/culture/ActionCalls';
+import React from "react";
 
-function Culture(props) {
-    return (
-        <div className="culture-view">
-            <FirstLook />
-            <ProductVideos />
-            <CultureText />
-            <ActionCalls />
-        </div>
-    );
+import FirstLook from "../components/culture/FirstLook/FirstLook";
+import ProductVideos from "../components/culture/ProductVideos/ProductVideos";
+import CultureText from "../components/culture/CultureText/CultureText";
+import ActionCalls from "../components/culture/ActionCalls/ActionCalls";
+import CultureDescriptions from "../components/culture/CultureDescriptions/CultureDescriptions";
+
+function Culture() {
+  return (
+    <div className="culture-view">
+      <FirstLook />
+      <ProductVideos />
+      <CultureDescriptions />
+      <CultureText />
+      <ActionCalls />
+    </div>
+  );
 }
 
 export default Culture;
