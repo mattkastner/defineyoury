@@ -3,7 +3,7 @@ import ProductDisplay from "../components/product/ProductDisplay";
 
 function Product(props) {
   return (
-    <div>
+    <div class="mt-4">
       <ProductDisplay />
     </div>
   );

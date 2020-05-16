@@ -1,33 +1,26 @@
-import React, { Component } from "react";
+import React from "react";
+
 import "./cultureText.scss";
 
-function CultureText() {
+export default function CultureText(props) {
   return (
-    <div className="section5 bg-dark container-fluid ">
-      <div className="row">
-        <div className="col-sm-12 col-md-12 col-lg-6 paddingLeft ">
-          <div className="bg-light paddingLeft text-center rounded">
-            <div className="pt-3 text-center">
-              <button className="btn b6d text-light">Brand Afilaiate</button>
-            </div>
-            <p className="pt-4 p6  ">
-              Start Your own business by sharing our products with others done
-            </p>
-          </div>
-        </div>
-        <div className="col-sm-12 col-md-12 col-lg-6  paddingRight ">
-          <div className="bg-light paddingLeft text-center rounded">
-            <div className="pt-3 ">
-              <button className="btn b6y text-light">Brand Afilaiate</button>
-            </div>
-            <p className="pt-4 p6 ">
-              Start Your own business by sharing our products with others
-            </p>
-          </div>
+    <div className="section5">
+      <div className="action-container">
+        <div className="action">
+          <button className="brand-customer__btns dark">Brand Affiliate</button>
+          <p className="">
+            Start Your own business by sharing our products with others done
+          </p>
+       </div>
+      </div>
+      <div className="action-container">
+        <div className="action">
+          <button className="brand-customer__btns yellow">Customer</button>
+          <p className="">
+            Shop from over 1,00 incredible products and enjoy exclusive perks
+          </p>
         </div>
       </div>
     </div>
   );
 }
-
-export default CultureText;

@@ -34,7 +34,7 @@ function Navigation(props) {
             onClick={() => setMenuClick(false)}
           />
           <UnstyledLink to={{ pathname: "/culture" }} name="Culture" />
-          <UnstyledLink to={{ pathname: "/products" }} name="Products" />
+          <UnstyledLink to={{ pathname: "/product" }} name="Products" />
           <UnstyledLink to={{ pathname: "/business" }} name="Business" />
           <UnstyledLink to={{ pathname: "/training" }} name="Training" />
         </ul>

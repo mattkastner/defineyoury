@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import button from "../../utilities/assets/images/button.png";
+import button from "../../../utilities/assets/images/button.png";
 
 class Cards extends Component {
   render() {
