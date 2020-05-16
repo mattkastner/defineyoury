@@ -10,7 +10,6 @@ function ProductVideos(props) {
   return (
     <section className="product-videos__container">
       <div className="top-text">
-        <div className="light-gray--cover"></div>
         <h3>We are all in this together</h3>
         <p>
           After cleansing and balancing, your body now has the foundation it

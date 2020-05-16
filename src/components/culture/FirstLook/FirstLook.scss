@@ -13,7 +13,7 @@
   top: 0;
   left: 0;
   width: 974px;
-  height: 895px;
+  height: 100%;
 
   background: linear-gradient(
     90deg,
@@ -29,7 +29,7 @@
 .text-container {
   position: relative;
   @include flex();
-
+  margin-left: 40px;
   height: 350px;
   width: 500px;
   font-family: $font-family--primary;
@@ -51,9 +51,105 @@ p {
 
 .hiking-woman {
   position: absolute;
-  width: 2100px;
+  width: 1600px;
   height: auto;
   left: 0px;
   top: -350px;
   z-index: -1;
+}
+
+
+// Laptop L -- 1440px
+@media screen and (min-width: 1440px){
+  .hiking-woman {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: -350px;
+    z-index: -1;
+  }
+}
+
+// Laptop -- 1024px
+@media screen and (min-width: 1024px){
+  .hiking-woman {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: -50px;
+    z-index: -1;
+  }
+}
+
+// Up to: Laptop -- 1023px
+@media screen and (max-width: 1023px){
+  .hiking-woman {
+    width: 1000px;
+    height: auto;
+    left: 0px;
+    top: -40px;
+  }
+}
+
+// Mobile L - 425px
+@media screen and (max-width: 425px) {
+  .culture-view__first-look {
+    position: relative;
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+    @include flex(space-around, start);
+  }
+  .text-container {
+    margin-top: 60px;
+    height: 200px;
+    width: 100vw;
+    font-family: $font-family--primary;
+  }
+  h4 {
+    width: 76%;
+    color: $light;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 50px;
+    span {
+      color: $accent;
+    }
+  }
+  p {
+    margin: 50px 0 30px 0;
+    width: 76%;
+    color: $secondary-light;
+    font-size: 18px;
+    line-height: 27px;
+
+  }
+  .hiking-woman {
+    width: 1000px;
+    height: auto;
+    left: -140px;
+    top: -40px;
+  }
+}
+
+// Mobile M - 375px
+@media screen and (max-width: 375px) {
+  .hiking-woman {
+    width: 1000px;
+    height: auto;
+    left: -140px;
+    top: -40px;
+  }
+}
+
+// Mobile S - 320px
+@media screen and (max-width: 320px) {
+  .hiking-woman {
+    width: 1000px;
+    height: auto;
+    left: -140px;
+    top: -40px;
+  }
 }

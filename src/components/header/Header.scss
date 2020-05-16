@@ -1,6 +1,6 @@
 @import "../../utilities/style.scss";
 
-// 4k Screens 2560px
+// 4k Screens - 2560px
 @media screen and (max-width: 2561px) {
   .header__nav {
     position: sticky;
@@ -8,7 +8,7 @@
     top: 0;
     font-family: $font-family__primary;
     width: 100vw;
-    height: 100px;
+    height: 80px;
     background-color: #000000;
     @include flex(space-around);
     transition: height 200ms;
@@ -17,85 +17,48 @@
     @include flex(space-between);
     width: $content-width__4k;
     .title {
-      font-size: 25px;
+      font-size: 28px;
       color: $header-font--color;
     }
   }
 }
 
-// Laptop L 1440px
-@media screen and (max-width: 2561px) {
+// Laptop XL - 1440px
+@media screen and (max-width: 1840px) {
   .header__nav {
-    position: sticky;
-    z-index: 2;
-    top: 0;
-    font-family: $font-family__primary;
-    width: 100vw;
     height: 60px;
-    background-color: #000000;
-    @include flex(space-around);
-    transition: height 200ms;
   }
-
   .nav__container {
-    @include flex(space-between);
-    width: $content-width__laptop;
     .title {
       font-size: 17px;
-      color: $header-font--color;
     }
-  }
-
-  .header__nav.shrink {
-    height: 40px;
   }
 }
 
-// Laptop L 1440px
+// Laptop L - 1440px
 @media screen and (max-width: 1440px) {
   .header__nav {
-    position: sticky;
-    z-index: 2;
-    top: 0;
-    font-family: $font-family__primary;
-    width: 100vw;
-    height: 60px;
-    background-color: #000000;
-    @include flex(space-around);
-    transition: height 200ms;
+    height: 50px;
   }
   .nav__container {
     padding: 0 30px;
-    @include flex(space-between);
     width: $content-width__laptop;
     .title {
       font-size: 17px;
-      color: $header-font--color;
     }
   }
 }
 
-// Mobile L 425px
+// Mobile L - 425px
 @media screen and (max-width: 425px) {
   .header__nav {
-    position: sticky;
-    z-index: 2;
-    top: 0;
-    font-family: $font-family__primary;
-    width: 100vw;
     height: 60px;
-    background-color: #000000;
-    @include flex(space-around);
-    align-items: center;
-    transition: height 200ms;
   }
   .nav__container {
     padding: 0 30px;
-    @include flex(space-between);
     width: $content-width__mobile;
     .title {
       font-size: 17px;
-      color: $header-font--color;
     }
   }
 }

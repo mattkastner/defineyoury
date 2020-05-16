@@ -1,38 +1,73 @@
 @import "../../../utilities/style.scss";
 
-.product-videos__container {
-  position: relative;
-  width: 100%;
-  height: 700px;
-  background-color: $background-light;
-  font-family: $font-family--primary;
-  @include flex(space-around);
-}
-
-.top-text {
-  width: $content-width__laptop;
-  @include flex;
-
-  h3 {
-    font-size: 36px;
-    margin-bottom: 30px;
+// Desktop - 1440px+
+@media screen and (min-width: 1441px) {
+  .product-videos__container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: $background-light;
+    font-family: $font-family--primary;
+    @include flex(space-around);
   }
-  p {
-    letter-spacing: 1px;
-    line-height: 35px;
+
+  .top-text {
+    background-color: rgba(255, 255, 255, 0.336);
+    width: 40%;
+    @include flex;
+    align-items: flex-start;
+
+    h3 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    p {
+      letter-spacing: 1px;
+      line-height: 35px;
+    }
+  }
+
+  .product-videos {
+    @include flex(space-between);
+    width: $content-width__laptop;
   }
 }
 
-.light-gray--cover {
-  position: absolute;
-  left: 0;
-  height: 230px;
-  width: 1300px;
-  background-color: rgba(255, 255, 255, 0.336);
-  border-radius: 2px;
+// Laptop L - 1440px
+@media screen and (max-width: 1440px) {
+  .product-videos__container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: $background-light;
+    font-family: $font-family--primary;
+    @include flex(space-around);
+  }
+
+  .top-text {
+    background-color: rgba(255, 255, 255, 0.336);
+    padding: 30px 0 30px 30px;
+    width: 92%;
+    @include flex;
+
+    h3 {
+      font-size: 26px;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+    p {
+      letter-spacing: 1px;
+      line-height: 30px;
+      width: 96%;
+    }
+  }
+
+  .product-videos {
+    @include flex(space-between);
+    width: 95%;
+  }
 }
 
-.product-videos {
-  @include flex(space-between);
-  width: $content-width__laptop;
+// Laptop -- 1024px
+@media screen and (max-width: 1024px) {
 }
