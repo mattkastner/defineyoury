@@ -1,91 +1,162 @@
-
-/* ****************** */
-/*! Products page */
-/* ****************** */
-
-// Colors
-$header: #000000;
-$accent: rgb(224, 216, 0);
-$light: #F2F2F2;
-$secondary-light: #c4c4c4;
+@import "../../utilities/style.scss";
 
 
 
+.product__wrap {
+    font-family: $font-family__primary;
+    background-color: #fff;
+    .pheading {
+        font-size: 54px;
+        line-height: 1.3;
+        color: #131212;
+        font-weight: 700;
+        margin: 0 0 30px 0;
+        @media (max-width: 1199px) {
+            font-size: 42px;
+        }
+        @media (max-width: 575px) {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+    }
+    .ptext {
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: left;
+        font-size: 18px;
+        color: #131212;
+        margin: 0 0 60px 0;
+        @media (max-width: 575px) {
+            font-size: 15px;
+        }
+    }
 
-
-.first {
-    background-color: $light;
-    margin: 80px 0 80px 80px;
-  }
-  
-  .buy {
-    padding: 30px 170px;
-    font-size: 48px;
-  }
-  .buyBtn {
-    font-size: 24px;
-    background: $accent;
-    border-radius: 10px;
-    width: 170px;
-    color: white;
-  }
-  .pheading {
-    font-weight: 900;
-    font-size: 2.5rem;
-    color:$header;
-    padding: 10px;
-    margin-top: 100px;
-    font-family: "Open Sans";
-  }
-  
-  .ptext {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+    .pbutton {
+        border: 1px solid #989898;
+        border-radius: 7px;
+        height: 50px;
+        text-transform: uppercase;
+        color: $header-font--color;
+        font-weight: 700;
+        &:hover {
+            background-color: $accent;
+            color: #fff;
+            border-color: $accent;
+        }
+    }
+    .buyBtn {
+        width: 100%;
+        max-width: 200px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: $accent;
+        color: #fff;
+        border-color: $accent;
+        margin: 40px auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+        border-radius: 7px;
+    }
+}
+.product__banner {
+    background-color: #e5e5e5;
+    padding: 100px 0;
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
+}
+.availabel__heading {
     font-size: 18px;
-    line-height: 1.5;
-    padding: 0 10px 50px 10px;
-    color:  $header;
-  }
-  
-  .pbutton {
-    font-family: Circular Std;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 36px;
-    color: $secondary-light;
-    border-radius: 10px;
-  }
-  /* ? cards */
-.box {
-  border: none;
-  outline: hidden;
-  background: transparent;
-  width: 18rem;
+    text-transform: uppercase;
+    color: #131212;
+    line-height: 1.3;
+    margin: 0 0 12px;
+    font-weight: 700;
 }
-.images {
-  position: relative;
+.product__container {
+    max-width: 1460px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.btnimg {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  width: 70px;
-}
-.imgcard {
-  height: 250px;
-  background-color: $light;
+.product-col {
+    background-color: $white;
 }
 
-.title {
-  font-size: 30px;
-  color: $header;
-}
 
-.description {
-  font-size: 15px;
-  letter-spacing: 0.1px;
-  color: $secondary-light;
+
+
+
+.related__section {
+    padding: 100px 0;
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        color: #131212;
+        line-height: 1.3;
+        margin: 0 0 30px 0;
+        @media (max-width: 575px) {
+            font-size: 26px;
+        }
+    }
+}
+.pc__Card {
+    @media (max-width: 991px) {
+        margin-bottom: 25px;
+    }
+    .image {
+        width: 100%;
+        height: 220px;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        @media (max-width: 575px) {
+            height: auto;
+        }
+        .videoPlayIcon {
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            img {
+                width: 100%;
+            }
+        }
+    }
+    span {
+        font-size: 20px;
+        color: $header;
+        font-weight: 700;
+        line-height: 1.4;
+        display: block;
+        margin-bottom: 12px;
+    }
+    p {
+        font-size: 16px;
+        color: #61636f;
+        line-height: 1.4;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .buyBtn {
+        cursor: pointer;
+        margin-left: 0;
+    }
 }

@@ -2,7 +2,10 @@
 
 .nav-link {
   position: relative;
-  height: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $background-light;
+  margin: 0 10px;
   &:hover {
     .nav-indicator {
       background-color: $accent;
@@ -12,10 +15,10 @@
 }
 .nav-indicator {
   position: absolute;
-  bottom: -2.5px;
+  bottom: -7px;
   left: 0;
   width: 0;
-  height: 1.5px;
+  height: 3px;
   transition: width 400ms;
 }
 
@@ -28,7 +31,10 @@
 @media screen and (max-width: 578px) {
   .nav-link {
     position: relative;
-    height: 15px;
+    // height: 15px;
+    padding: 7px 0;
+    display: block;
+    width: 100%;
     &:hover {
       .nav-indicator {
         background-color: $accent;
@@ -38,7 +44,7 @@
   }
   .nav-indicator {
     position: absolute;
-    bottom: -0.7em;
+    bottom: 0;
     left: 0;
     width: 0;
     height: 1.5px;

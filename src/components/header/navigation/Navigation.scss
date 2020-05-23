@@ -17,7 +17,8 @@ ul {
 li {
   margin: 0 5px;
   font-size: 11px;
-  color: $header-font--color;
+  color: $background-light;
+  font-weight: 700;
 }
 
 // Mobile L 425px
@@ -39,7 +40,7 @@ li {
     position: absolute;
     z-index: 2;
     top: 0px;
-    right: -300px;
+    right: -100%;
     width: 200px;
     height: 100vh;
     background: $dark;
@@ -89,7 +90,7 @@ li {
     position: absolute;
     z-index: 2;
     top: 0px;
-    right: -200px;
+    right: -100%;
     width: 200px;
     height: 100vh;
     background: $dark;

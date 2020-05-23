@@ -13,7 +13,7 @@ function ActionCalls(props) {
             </p>
             <div className="btnDiv">
               <button className="btn text-light yb6">
-                TAKE THE FIRST STEP
+                READY TO TAKE FIRST STEP
               </button>
             </div>
           </div>

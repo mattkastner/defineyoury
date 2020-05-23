@@ -5,42 +5,45 @@ import "../culture.scss";
 // images
 import posterImg from "../../../utilities/assets/images/thumbnail.png";
 import button from "../../../utilities/assets/images/button.png";
+import VideoPlayIcon from "../../../utilities/assets/images/button.png";
 
 class CultureDescriptions extends Component {
   render() {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="leftDiv">
-            <div className="content2 text-light pt-5 pl-5 pr-5 pb-0">
-              <h1 className="science-header pb-5 pl-5">
+          <div className="col-md-6 leftDiv">
+            <div className="content2 text-light">
+              <h1 className="science-header pb-2">
                 <p className="d-block firstHalf ">Scientifically</p>{" "}
                 <p className="secondHalf"> Proven Products</p>
               </h1>
-              <p className="text pl-5">
+              <p className="text">
                 This is your mission. To EMPOWER yourself and work toward the
                 prime of your life. Those who understand their heritage and are
                 committed to the philosophy of improving their health are one
                 stepping stone closer to even grander ambitions.
               </p>
-              <p className="text pl-5">
+              <p className="text">
                 <span className="hidden">text</span> Find the freedom you need
                 to truly Make Life Better. Then, as you reach your prime, begin
                 helping others work toward their own goals!
               </p>
             </div>
           </div>
-          <div className="rightDiv">
+          <div className="col-md-6 rightDiv">
             <div>
               <h1 className="headingSpacing">
                 <span className="firstHead">We Know You Want To </span>
                 <span className="d-block secondHead">Live A Prime Life</span>
               </h1>
               <div className="images">
-                <img src={button} className="btnimg" alt="" />
                 <img src={posterImg} alt="" width="100%" />
+                <a href="#/" className="videoPlayIcon">
+                  <img src={VideoPlayIcon} alt="" />
+                </a>
               </div>
-              <div className="content3 p-3 pb-5">
+              <div className="content3 pb-5">
                 <p className="pt-4 p1">
                   <span className="hidden">text</span>
                   Each of Unicity’s products are subject to meticulous research

@@ -1,9 +1,10 @@
 import React from 'react';
+import TrainingDisplay from "../components/training/TrainingDisplay";
 
 function Training(props) {
     return (
         <div>
-            Training.js
+            <TrainingDisplay/>
         </div>
     );
 }

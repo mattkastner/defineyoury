@@ -115,39 +115,61 @@ $content-width: 1000px;
   // height: 900px;
 }
 
+
+.content2  {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .firstHalf {
-  font-weight: 100;
-  font-size: 35px;
+  font-weight: 400;
+  font-size: 40px;
   line-height: 1;
   color: $light;
   font-family: $font-family__primary;
 }
 .secondHalf {
-  font-weight: 1000;
-  font-size: 35px;
+  font-weight: 700;
+  font-size: 45px;
   line-height: 1.5;
   color: $light;
   font-family: $font-family__primary;
 }
 .text {
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 2;
-  color: $light;
+  color: $white;
   font-family: $font-family__primary;
+  font-weight: 700;
 }
 .leftDiv {
   background-image: url("../../utilities/assets/images/leftbg.png");
   width: 50%;
-  height: 900px;
+  height: 1500px;
   background-size: cover;
   font-weight: 500;
   box-sizing: border-box;
-  padding: 100px;
+  padding: 50px 0;
+  @media (max-width: 1199px) {
+    height: 1000px;
+  }
+  @media (max-width: 991px) {
+    height: 750px;
+  }
+  @media (max-width: 991px) {
+    width: 100%;
+    height: 600px;
+    background-position: center;
+  }
 }
 
 .content3 {
-  margin-top: 30px;   
+  margin-top: 30px;  
+  @media (max-width: 991px) {
+    margin-top: 0;
+  } 
 }
 
 .rightDiv {
@@ -158,8 +180,22 @@ $content-width: 1000px;
   padding: 20px 40px;
   background: white;
   width: 50%;
-  height: 900px;
+  height: 1500px;
   font-weight: 500;
+  @media (max-width: 1199px) {
+    height: 1000px;
+  }
+  @media (max-width: 991px) {
+    height: 750px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (max-width: 991px) {
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 .hidden {
   visibility: hidden;
@@ -171,13 +207,19 @@ $content-width: 1000px;
   line-height: 1;
   font-family: $font-family__primary;
   color: $header;
+  @media (max-width: 1199px) {
+    font-size: 32px;
+  }
 }
 .secondHead {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 50px;
   line-height: 1.5;
   color:  $accent;
   font-family: $font-family__primary;
+  @media (max-width: 1199px) {
+    font-size: 32px;
+  }
 }
 
 .headingSpacing {
@@ -186,8 +228,11 @@ $content-width: 1000px;
 
 .p1 {
   font-family: $font-family__primary;
-  font-size: 14px;
-  line-height: 2;
+  font-size: 16px;
+    color: #61636f;
+    line-height: 2;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 /*todo section 5 */
@@ -224,30 +269,51 @@ $content-width: 1000px;
 .section6 {
   background-image: url("../../utilities/assets/images/section6bg.png");
   background-size: cover;
-  height: 60vh;
+  padding: 200px 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 991px) {
+    padding: 130px 0;
+  }
+  @media (max-width: 767px) {
+    background-position: top center;
+  }
+  @media (max-width: 575px) {
+    padding: 100px 0;
+  }
 }
 .content6 {
-  width: 550px;
-  font-weight: 500;
-  font-size: 35px;
+  max-width: 720px;
+  font-weight: 700;
+  font-size: 50px;
   line-height: 1.5;
   text-align: center;
   color: white;
+  @media (max-width: 991px) {
+    font-size: 40px;
+  }
+  @media (max-width: 767x) {
+    font-size: 34px;
+  }
+  @media (max-width: 575px) {
+    font-size: 26px;
+  }
 }
 .yb6 {
-  background:  rgba(224, 216, 0, 0.166);
+  background:   #e0d800;
   border-radius: 10px;
   border: 2px solid $accent;
   color: $accent;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   padding: 20px 30px;
   font-family: $font-family__primary;
   transition: background 200ms;
+  @media (max-width: 575px) {
+    padding: 15px 20px;
+  }
 }
 .text6 {
   margin-bottom: 50px;
@@ -266,6 +332,17 @@ $content-width: 1000px;
 }
 .images {
   position: relative;
+}
+.videoPlayIcon {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  img {
+      width: 100%;
+  }
 }
 .btnimg {
   position: absolute;
@@ -361,11 +438,6 @@ footer h1{
   .firstHead {
     font-size: 25px;
   }
-  .leftDiv {
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-  }
 
   .science-header {
     display: flex;
@@ -380,7 +452,7 @@ footer h1{
   }
 
   .headingSpacing {
-    padding: 200px 40px 20px 30px;
+    padding: 0;
   }
   .p1 {
     font-weight: 500;
@@ -419,22 +491,7 @@ footer h1{
 /* ! media query for section 6 */
 @media only screen and (max-width: 768px) {
   .section6 {
-    height: 50vh;
     width: 100%;
-  }
-  .content6 {
-    font-weight: 300;
-    font-size: 20px !important;
-    line-height: 1;
-    width: 300px;
-    text-align: center;
-  }
-  .yb6 {
-    padding: 10px;
-    font-size: 10px;
-  }
-  .text6 {
-    padding: 0;
   }
 }
 
@@ -454,40 +511,18 @@ footer h1{
 
 /* ! media query for section 6 */
 @media only screen and (max-width: 498px) {
-  .section6 {
-    height: 30vh;
-  }
-  .content6 {
-    top: 30px;
-    left: 0;
-    right: 0;
-    padding-left: 0;
-    font-weight: 300;
-    font-size: 20px !important;
-    line-height: 30px;
-    width: 300px;
-  }
-  .yb6 {
-    padding: 10px;
-    font-size: 10px;
-  }
-  .btnDiv {
-    width: 200px;
-  }
-  .text6 {
-    padding: 0;
-  }
+
 }
 
 /* ! media query for section 4 */
 @media only screen and (max-width: 498px) {
   /*todo  Section 4 */
   .firstHalf {
-    font-size: 40px;
-    line-height: 56px;
+    font-size: 30px;
+    line-height: 1.6;
   }
   .secondHalf {
-    font-size: 40px;
-    line-height: 56px;
+    font-size: 30px;
+    line-height: 1.6;
   }
 }

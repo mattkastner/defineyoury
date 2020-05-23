@@ -23,30 +23,48 @@
 }
 
 .first-look__container {
-  width: $content-width__laptop;
   @include flex();
 }
 .text-container {
   position: relative;
   @include flex();
-  margin-left: 40px;
-  height: 350px;
   width: 500px;
   font-family: $font-family--primary;
-}
-h4 {
-  color: $light;
-  font-size: 49px;
-  font-weight: 400;
-  line-height: 70px;
-  span {
-    color: $accent;
+  @media (max-width: 640px) {
+    width: 360px;
   }
 }
-p {
-  color: $secondary-light;
-  font-size: 18px;
-  line-height: 27px;
+.culture-view__first-look  {
+  h4 {
+    color: $light;
+    font-size: 49px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 35px;
+    span {
+      color: $accent;
+    }
+    @media (max-width: 991px) {
+      font-size: 36px;
+    }
+    @media (max-width: 480px) {
+      font-size: 30px;
+      width: 100%;
+     }
+  }
+
+  p {
+    color: $white;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 35px;
+    @media (max-width: 767px) { 
+      margin-top: 0px !important;
+    }
+    @media (max-width: 480px) { 
+      font-size: 16px;
+    }
+  }
 }
 
 .hiking-woman {
@@ -58,98 +76,36 @@ p {
   z-index: -1;
 }
 
-
-// Laptop L -- 1440px
-@media screen and (min-width: 1440px){
-  .hiking-woman {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    left: 0px;
-    top: -350px;
-    z-index: -1;
-  }
+.first-look__container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-// Laptop -- 1024px
-@media screen and (min-width: 1024px){
-  .hiking-woman {
-    position: absolute;
+.culture-view__first-look {
+  @media (max-width: 767px) {
+    height: 470px;
+  }
+  .general-button--yellow {
+    padding: 20px 30px;
+    height: 60px;
+    max-width: 220px;
     width: 100%;
-    height: auto;
-    left: 0;
-    top: -50px;
-    z-index: -1;
-  }
-}
-
-// Up to: Laptop -- 1023px
-@media screen and (max-width: 1023px){
-  .hiking-woman {
-    width: 1000px;
-    height: auto;
-    left: 0px;
-    top: -40px;
-  }
-}
-
-// Mobile L - 425px
-@media screen and (max-width: 425px) {
-  .culture-view__first-look {
-    position: relative;
-    height: 550px;
-    width: 100%;
-    overflow: hidden;
-    @include flex(space-around, start);
-  }
-  .text-container {
-    margin-top: 60px;
-    height: 200px;
-    width: 100vw;
-    font-family: $font-family--primary;
-  }
-  h4 {
-    width: 76%;
-    color: $light;
-    font-size: 34px;
-    font-weight: 800;
-    line-height: 50px;
-    span {
-      color: $accent;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    svg {
+      display: none;
+    }
+    @media (max-width: 767px) {
+      padding: 10px 5px;
+      height: 50px;
+      max-width: 200px;
+      font-size: 16px;
     }
   }
-  p {
-    margin: 50px 0 30px 0;
-    width: 76%;
-    color: $secondary-light;
-    font-size: 18px;
-    line-height: 27px;
-
-  }
-  .hiking-woman {
-    width: 1000px;
-    height: auto;
-    left: -140px;
-    top: -40px;
-  }
 }
 
-// Mobile M - 375px
-@media screen and (max-width: 375px) {
-  .hiking-woman {
-    width: 1000px;
-    height: auto;
-    left: -140px;
-    top: -40px;
-  }
-}
-
-// Mobile S - 320px
-@media screen and (max-width: 320px) {
-  .hiking-woman {
-    width: 1000px;
-    height: auto;
-    left: -140px;
-    top: -40px;
-  }
-}

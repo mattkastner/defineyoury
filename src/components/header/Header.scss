@@ -1,5 +1,8 @@
 @import "../../utilities/style.scss";
-
+body {
+  position: relative;
+  overflow: hidden;
+}
 // 4k Screens - 2560px
 @media screen and (max-width: 2561px) {
   .header__nav {
@@ -9,7 +12,8 @@
     font-family: $font-family__primary;
     width: 100vw;
     height: 80px;
-    background-color: #000000;
+    background-color: $dark;
+    position: relative;
     @include flex(space-around);
     transition: height 200ms;
   }
@@ -18,7 +22,9 @@
     width: $content-width__4k;
     .title {
       font-size: 28px;
-      color: $header-font--color;
+      color: $background-light;
+      text-decoration: none;
+      font-weight: 500;
     }
   }
 }

@@ -34,7 +34,7 @@ function Header(props) {
       className={scrollPosition > 40 ? "header__nav" : "header__nav"}
     >
       <div className="nav__container">
-        <h2 className="title">UGeneration</h2>
+        <a href="#/" className="title">Define Youry</a>
         <Navigation />
       </div>
     </header>
