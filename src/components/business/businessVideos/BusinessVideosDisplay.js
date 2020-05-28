@@ -10,7 +10,7 @@ function BusinessVideosDisplay(props) {
                 <h1>
                     {props.name}
                 </h1>
-                <h2>{props.title}</h2>
+                <h2 className='title-video'>{props.title}</h2>
 
                 <ReactPlayer url={props.url} width='300' height='240' controls
                 />
