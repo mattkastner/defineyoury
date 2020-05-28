@@ -27,6 +27,7 @@ function JoinNow(props) {
                 </div>
             </div>
             <img className="tablePic" src={tablePic} alt="tablePic" />
+            <div className='darken-table-pic'></div>
         </section>
     );
 }
