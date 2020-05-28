@@ -2,7 +2,7 @@
 
 .business-videos-body {
 	width: 100%;
-	height: 125vh;
+	height: 75vh;
 	background-color: $background-light;
 }
 
@@ -13,7 +13,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 250px;
+	height: 180px;
 }
 .business-videos {
 	@include flex;
@@ -21,9 +21,11 @@
 	height: 100%;
 }
 .business-video-container {
-	width: 100%;
-	height: 100%;
+	width: 2000px;
+	height: 500px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow-y: auto;
+	overflow-x: hidden;
 }

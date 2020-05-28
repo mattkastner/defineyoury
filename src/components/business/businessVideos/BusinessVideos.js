@@ -14,59 +14,73 @@ function BusinessVideos(props) {
 
                     <div className='business-videos'>
                         <BusinessVideosDisplay
-                            text='Shavonda Crawford'
+                            name='Shavonda Crawford'
+                            title='Cosmetologist'
                             url='https://vimeo.com/115187166'
                         />
                         <BusinessVideosDisplay
-                            text='Jan Bloom'
+                            name='Jan Bloom'
+                            title='Medical Practice Administrator'
                             url='https://vimeo.com/81626214'
                         />
                         <BusinessVideosDisplay
-                            text='Steve Farias'
+                            name='Steve Farias'
+                            title='Orthopedic Implant Sales'
                             url='https://vimeo.com/81637746'
                         />
                         <BusinessVideosDisplay
-                            text='Rick Gash'
+                            name='Rick Gash'
+                            title='Pharmaceutical Rep'
                             url='https://vimeo.com/81621066'
                         />
                         <BusinessVideosDisplay
-                            text='April Judd'
+                            name='April Judd'
+                            title='Weight Loss & Management'
                             url='https://vimeo.com/81616084'
                         />
                         <BusinessVideosDisplay
-                            text='Paul Magisrti'
+                            name='Paul Magisrti'
+                            title='Sr. VP Sales & Marketing'
                             url='https://vimeo.com/81630932'
                         />
                         <BusinessVideosDisplay
-                            text='Greg McTee'
+                            name='Greg McTee'
+                            title='Commercial Real Estate'
                             url='https://vimeo.com/111804731'
                         />
                         <BusinessVideosDisplay
-                            text='Jim Moyles'
+                            name='Jim Moyles'
+                            title='Mergers & Acquisitions'
                             url='https://vimeo.com/81629209'
                         />
                         <BusinessVideosDisplay
-                            text='Todd Pettus'
+                            name='Todd Pettus'
+                            title='School Teacher'
                             url='https://vimeo.com/81635495'
                         />
                         <BusinessVideosDisplay
-                            text='Phillip Song'
+                            name='Phillip Song'
+                            title='Cooperate Real Estate'
                             url='https://vimeo.com/81634353'
                         />
                         <BusinessVideosDisplay
-                            text='Ron Thomson'
+                            name='Ron Thomson'
+                            title='Insurance & Real Estate'
                             url='https://vimeo.com/81616083'
                         />
                         <BusinessVideosDisplay
-                            text='Laurie Turner'
+                            name='Laurie Turner'
+                            title='Medical Practice Manager'
                             url='https://vimeo.com/81627692'
                         />
                         <BusinessVideosDisplay
-                            text='Gundrun Van Dyke'
+                            name='Gundrun Van Dyke'
+                            title='Doctor of Naturopathy'
                             url='https://vimeo.com/81624109'
                         />
                         <BusinessVideosDisplay
-                            text='Evan Weston'
+                            name='Evan Weston'
+                            title='Institutional Investment Management'
                             url='https://vimeo.com/81624945'
                         />
 
