@@ -45,14 +45,26 @@ function IntroVideos(props) {
 						</p>
                     </div>
                 </div>
+                <div className='introduction-videos'>
 
-                {introduction ? (
-                    <IntroVideosDisplay text="hey" />
-                ) : business ? (
-                    <IntroVideosDisplay text="yo" />
-                ) : (
-                            <IntroVideosDisplay text="lol" />
-                        )}
+                    {introduction ? (
+                        <IntroVideosDisplay
+                            url='https://vimeo.com/108748728'
+                            title='Introduction'
+                            text='Join the millions of people leaving corporate America to pursue their life’s desires on their terms.'
+                        />
+                    ) : business ? (
+                        <IntroVideosDisplay url='https://vimeo.com/111139806'
+                            title='The Business'
+                            text='Unicity International, a global company operating in more than 30 countries, is seeking motivated people who want to be independent and operate their own businesses.'
+                        />
+                    ) : (
+                                <IntroVideosDisplay url='https://vimeo.com/108689210'
+                                    title='The Products'
+                                    text='Three unique and proven nutritional formulations that work together synergistically to help you reduce weight, stabilize blood sugar levels, optimize cholesterols levels and improve bodily functions.'
+                                />
+                            )}
+                </div>
             </div>
         </section>
     );
