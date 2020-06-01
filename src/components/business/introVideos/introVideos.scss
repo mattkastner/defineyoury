@@ -4,6 +4,8 @@
 	width: 100%;
 	height: 75vh;
 	background-color: $background-light;
+	display: flex;
+	flex-direction: row;
 }
 
 .intro-menu-container {
@@ -23,6 +25,7 @@
 	font-size: 22px;
 	font-weight: 600;
 	color: $dark;
+	border-bottom: 1px solid $dark;
 }
 
 .menu-introduction:hover {
@@ -35,4 +38,12 @@
 
 .menu-products:hover {
 	color: $accent;
+}
+
+.introduction-videos {
+	width: 1500px;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
