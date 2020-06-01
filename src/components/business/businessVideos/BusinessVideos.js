@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './businessVideos.scss'
 import BusinessVideosDisplay from './BusinessVideosDisplay';
 
