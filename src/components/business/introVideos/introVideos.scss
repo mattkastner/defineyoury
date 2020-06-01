@@ -1,0 +1,38 @@
+@import "../../../utilities/style.scss";
+
+.intro-video-body {
+	width: 100%;
+	height: 75vh;
+	background-color: $background-light;
+}
+
+.intro-menu-container {
+	width: 350px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0px 0px 200px;
+}
+
+.intro-menu-items {
+	width: 100%;
+	height: 130px;
+	display: flex;
+	align-items: center;
+	font-family: $font-family__primary;
+	font-size: 22px;
+	font-weight: 600;
+	color: $dark;
+}
+
+.menu-introduction:hover {
+	color: $accent;
+}
+
+.menu-business:hover {
+	color: $accent;
+}
+
+.menu-products:hover {
+	color: $accent;
+}
