@@ -61,7 +61,7 @@ function IntroVideos(props) {
                     ) : (
                                 <IntroVideosDisplay url='https://vimeo.com/108689210'
                                     title='The Products'
-                                    text='Three unique and proven nutritional formulations that work together synergistically to help you reduce weight, stabilize blood sugar levels, optimize cholesterols levels and improve bodily functions.'
+                                    text='Three unique and proven nutritional formulations that work together synergistically to help you reduce weight, stabilize blood sugar levels, optimize cholesterol levels and improve bodily functions.'
                                 />
                             )}
                 </div>
