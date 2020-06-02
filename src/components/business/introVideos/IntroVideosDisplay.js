@@ -7,10 +7,12 @@ function IntroVideosDisplay(props) {
         <div className='intro-videos-display-body'>
 
             <ReactPlayer className='intro-video-player' url={props.url} controls />
-            <h1>
-                {props.title}
+            <h1 className='introduction-title-container'>
+                <p className='introduction-title'>
+                    {props.title}
+                </p>
             </h1>
-            <p>
+            <p className='introduction-text'>
                 {props.text}
             </p>
         </div>
