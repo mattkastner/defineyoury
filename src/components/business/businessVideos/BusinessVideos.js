@@ -80,7 +80,7 @@ function BusinessVideos(props) {
                         />
                         <BusinessVideosDisplay
                             name='Evan Weston'
-                            title='Institutional Investment Management'
+                            title='Investment Management'
                             url='https://vimeo.com/81624945'
                         />
 

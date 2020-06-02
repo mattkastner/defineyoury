@@ -1,4 +1,29 @@
 @import "../../../utilities/style.scss";
 
-.intro-video-player {
+.intro-videos-display-body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.introduction-title-container {
+	width: 640px;
+	height: 70px;
+	font-family: $font-family__primary;
+	font-size: 26px;
+	font-weight: 600;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.introduction-text {
+	width: 640px;
+	height: 100px;
+	font-family: $font-family__primary;
+	font-size: 18px;
+	line-height: 24px;
 }
