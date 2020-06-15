@@ -1,38 +1,64 @@
 @import "../../utilities/style.scss";
+
+$font-family__c-black: "Circular Std Black";
+$font-family__c-medium: "Circular Std Medium";
+$font-family__c-book: "Circular Std Book";
+
+.c-med {
+  font-family: $font-family__c-medium;
+}
+.c-black {
+  font-family: $font-family__c-black;
+}
+.c-book {
+  font-family: $font-family__c-book;
+}
+
 body {
   position: relative;
   overflow: hidden;
 }
+
 // 4k Screens - 2560px
 @media screen and (max-width: 2561px) {
   .header__nav {
-    position: sticky;
+    // position: sticky !important;
     z-index: 2;
     top: 0;
-    font-family: $font-family__primary;
+    font-family: $font-family__c-medium; //$font-family__primary;
     width: 100vw;
     height: 80px;
-    background-color: $dark;
-    position: relative;
+    background-color: $header;
+    position: fixed !important;
     @include flex(space-around);
     transition: height 200ms;
+    
+  }
+  .header__height__min {
+    height: 70px !important;
   }
   .nav__container {
     @include flex(space-between);
     width: $content-width__4k;
     .title {
       font-size: 28px;
-      color: $background-light;
+      color: $header-font--color;
+      &:hover {
+        color: $header-font--color--hover;
+      }
       text-decoration: none;
-      font-weight: 500;
+      font-weight: bold;
     }
   }
 }
 
 // Laptop XL - 1440px
 @media screen and (max-width: 1840px) {
+  .header__height__min {
+    height: 60px !important;
+  }
   .header__nav {
-    height: 60px;
+    height: 70px;
   }
   .nav__container {
     .title {
@@ -42,13 +68,17 @@ body {
 }
 
 // Laptop L - 1440px
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1600px) {
+  .header__height__min {
+    height: 60px !important;
+  }
   .header__nav {
-    height: 50px;
+    height: 70px;
   }
   .nav__container {
-    padding: 0 30px;
-    width: $content-width__laptop;
+    padding: 0 70px;
+    // width: $content-width__laptop;
+    width: 100%;
     .title {
       font-size: 17px;
     }
@@ -56,7 +86,7 @@ body {
 }
 
 // Mobile L - 425px
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .header__nav {
     height: 60px;
   }

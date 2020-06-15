@@ -1,26 +1,26 @@
 // Google Fonts import
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;;0,700;0,600;1,900&display=swap"');
 
 // Fonts
-$font-family__primary: 'Open Sans', sans-serif;
+$font-family__primary: "Open Sans", sans-serif;
 
 // Header Fonts
-$header-font--color: #707070;
-$roboto__fonts: 'Roboto', sans-serif;
+$header-font--color: #a0a0a0;
+$header-font--color--hover: #e0d800;
+$roboto__fonts: "Roboto", sans-serif;
 
 // Colors
 $header: #000000;
 $accent: rgb(224, 216, 0);
 $dark: #333333;
-$light: #F2F2F2;
+$light: #f2f2f2;
 $secondary-light: rgb(196, 196, 196);
 $white: #fff;
 $lightDark: #2d2d2d;
 
 // main section background color
-$background-light: #EFEFEF;
-
+$background-light: #efefef;
 
 // Width on content section
 $content-width__4k: 1400px;
@@ -28,6 +28,3 @@ $content-width__laptop: 1000px;
 $content-width__tablet: 1000px;
 $content-width__mobile-large: 500px;
 $content-width__mobile: 1000px;
-
-
-

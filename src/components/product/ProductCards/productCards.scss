@@ -1,31 +1,54 @@
 @import "../../../utilities/style.scss";
+$font-family__c-black: "Circular Std Black";
+$font-family__c-medium: "Circular Std Medium";
+$font-family__c-book: "Circular Std Book";
+
+.c-med {
+  font-family: $font-family__c-medium;
+}
+.c-black {
+  font-family: $font-family__c-black;
+}
+.c-book {
+  font-family: $font-family__c-book;
+}
 
 .product-card {
-	width: 400px;
-	height: 550px;
+  // width: 400px;
+  width: 100%;
+  height: auto; //550px
+  margin-bottom: 60px;
+  margin-top: 20px;
+  padding: 0 20px;
 }
 
 .react-player {
-	width: 300px;
-	height: 240px;
-	box-shadow: 17px 17px 100px #989898;
+  width: 400px;
+  height: 240px !important;
+  box-shadow: 17px 17px 100px #989898;
 }
 
 .product-header {
-	height: 50px;
-	font-size: 22px;
-	line-height: 27px;
-	color: #131212;
-	font-weight: 700;
-	display: flex;
-	align-items: center;
-	font-family: $font-family--primary;
+  // height: 50px;
+  font-size: 22px;
+  line-height: 27px;
+  color: #131212;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  font-family: $font-family__c-medium;
+  font-weight: 100 !important;
+  margin-top: 20px;
 }
 
 .product-text {
-	height: 50px;
-	width: 90%;
-	font-size: 16px;
-	line-height: 20px;
-	font-family: $font-family--primary;
+  // height: 50px;
+  // width: 90%;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-family__c-medium;
+  font-weight: 100 !important;
+  color: 61636f !important;
+  letter-spacing: 1.5px;
+  margin-top: 25px;
 }

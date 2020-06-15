@@ -1,58 +1,84 @@
 @import "../../../utilities/style.scss";
 
+$font-family__c-black: "Circular Std Black";
+$font-family__c-medium: "Circular Std Medium";
+$font-family__c-book: "Circular Std Book";
+
+.c-med {
+  font-family: $font-family__c-medium;
+  font-weight: 300 !important;
+}
+.c-black {
+  font-family: $font-family__c-black;
+}
+.c-book {
+  font-family: $font-family__c-book;
+}
+
 .section5 {
-    padding: 100px 0;
-    background-color: $lightDark;
-    @media (max-width: 575px) {
-        padding: 50px 0;
-    }
+  padding: 100px 70px;
+  background-color: $lightDark;
+  @media (max-width: 575px) {
+    padding: 50px 30px;
+  }
 }
 .section5__container {
+  // max-width: 1366px;
+  margin: 0 auto;
+  @media (min-width: 1601px) {
     max-width: 1366px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
+  }
+  // padding-left: 15px;
+  // padding-right: 15px;
+  width: 100%;
 }
 .action-container {
-    height: 250px;
-    width: 100%;
-    background: white;
-    border-radius: 7px;
-    @include flex(space-around, center);
+  height: 250px;
+  width: 100%;
+  background: white;
+  border-radius: 7px;
+  @include flex(space-around, center);
 }
 
 .action {
-    height: 45%;
-    width: 75%;
-    @include flex(space-around, center);
+  height: 45%;
+  width: 75%;
+  @include flex(space-around, center);
 
-    p {
-        margin-top: 20px;
-        font-family: $font-family__primary;
-        font-size: 16px;
-        color: $dark;
-        text-align: center;
-        font-weight: 700;
-        line-height: 1.6;
-    }
+  p {
+    margin-top: 20px;
+    font-family: $font-family__primary;
+    font-size: 16px;
+    color: $dark;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.6;
+  }
 }
 
 .brand-customer__btns {
-    cursor: pointer;
-    width: 200px;
-    height: 55px;
-    border-radius: 7px;
-    color: white;
-    border: none;
-    font-family: $font-family__primary;
-    font-weight: 700;
+  cursor: pointer;
+  width: 200px;
+  height: 55px;
+  border-radius: 7px;
+  color: white;
+  border: none;
+  font-family: $font-family__primary;
+  font-weight: 700;
+  transition-duration: 0.5s;
+  &:hover {
+    box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transition-duration: 0.5s;
+  }
 }
 
 .dark {
-    background-color: $dark;
+  background-color: $dark;
 }
 
 .yellow {
-    background-color: $accent;
+  background-color: $accent;
 }

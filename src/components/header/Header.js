@@ -1,4 +1,4 @@
-import { Redirect, withRouter } from "react-router-dom";
+import { Redirect, withRouter, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
 // components
@@ -8,33 +8,31 @@ import Navigation from "./navigation/Navigation";
 import "./Header.scss";
 
 function Header(props) {
-  // set the state for the scroll ability
-  const [scrollPosition, setSrollPosition] = useState(0);
+  useEffect(() => {
+    window.addEventListener("scroll", resizeHeaderOnScroll);
+  }, []);
+  const resizeHeaderOnScroll = () => {
+    const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+      shrinkOn = 200,
+      headerEl = document.getElementById("header");
 
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setSrollPosition(position);
+    if (distanceY > shrinkOn) {
+      headerEl.classList.add("header__height__min");
+    } else {
+      headerEl.classList.remove("header__height__min");
+    }
   };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-  }, []);
-
-  useEffect(() => {
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   if (props.location.pathname === "/") {
     return <Redirect to={"/culture"} />;
   }
+
   return (
-    <header
-      className={scrollPosition > 40 ? "header__nav" : "header__nav"}
-    >
+    <header id="header" className={"header__nav"}>
       <div className="nav__container">
-        <a href="#/" className="title">Define Youry</a>
+        <Link to="/" className="title">
+          Define Youry
+        </Link>
         <Navigation />
       </div>
     </header>

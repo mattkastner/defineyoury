@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { Fade } from "react-reveal";
 
 // components
 import { productVideosData } from "./constants";
 // style
 import "./ProductVideos.scss";
-import 'react-modal-video/scss/modal-video.scss';
+import "react-modal-video/scss/modal-video.scss";
+
 // Images
 import VideoPlayIcon from "../../../utilities/assets/images/button.png";
 import ModalVideo from "react-modal-video";
@@ -16,8 +18,8 @@ function ProductVideos(props) {
     <section className="product-videos__wrap">
       <div className="product-videos__container">
         <div className="top-text">
-          <h3>We are all in this together</h3>
-          <p>
+          <h3 c-med>We are all in this together</h3>
+          <p c-med>
             After cleansing and balancing, your body now has the foundation it
             needs to build toward prime health. You’ve set the stage to take a
             targeted approach to your body Research and innovation are here to
@@ -31,21 +33,23 @@ function ProductVideos(props) {
           <div className="row">
             {productVideosData.map((data, index) => {
               return (
-                <div className="col-lg-3 col-md-4 col-sm-6" key={index}>
-                  <div className="video-card">
-                    <div className="image" onClick={() => setOpen(true)}>
-                      <img src={data.img} alt="" />
-                      <a href="#/" className="videoPlayIcon">
-                        <img src={VideoPlayIcon} alt="" />
-                      </a>
+                <Fade bottom key={index}>
+                  <div className="col-lg-3 col-md-4 col-sm-6">
+                    <div className="video-card">
+                      <div className="image" onClick={() => setOpen(true)}>
+                        <img src={data.img} alt="" />
+                        <a href="#/" className="videoPlayIcon">
+                          <img src={VideoPlayIcon} alt="" />
+                        </a>
+                      </div>
+                      <span>{data.title}</span>
+                      <p>{data.dec}</p>
+                      {data.linkTitle.map((link, ind) => (
+                        <button key={ind}>{link}</button>
+                      ))}
                     </div>
-                    <span>{data.title}</span>
-                    <p>{data.dec}</p>
-                    {data.linkTitle.map((link, ind) => (
-                      <button key={ind}>{link}</button>
-                    ))}
                   </div>
-                </div>
+                </Fade>
               );
             })}
           </div>
@@ -53,6 +57,7 @@ function ProductVideos(props) {
         <ModalVideo
           channel="youtube"
           isOpen={isOpen}
+          youtube={{ theme: "dark" }}
           videoId="L61p2uyiMSo"
           onClose={() => setOpen(false)}
         />

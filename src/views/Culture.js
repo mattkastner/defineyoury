@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 
 import FirstLook from "../components/culture/FirstLook/FirstLook";
 import ProductVideos from "../components/culture/ProductVideos/ProductVideos";
@@ -9,11 +10,13 @@ import CultureDescriptions from "../components/culture/CultureDescriptions/Cultu
 function Culture() {
   return (
     <div className="culture-view">
-      <FirstLook />
-      <ProductVideos />
-      <CultureDescriptions />
-      <CultureText />
-      <ActionCalls />
+      <Fade>
+        <FirstLook />
+        <ProductVideos />
+        <CultureDescriptions />
+        <CultureText />
+        <ActionCalls />
+      </Fade>
     </div>
   );
 }

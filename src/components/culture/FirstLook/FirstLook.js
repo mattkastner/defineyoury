@@ -14,14 +14,19 @@ function FirstLook(props) {
     <section className="culture-view__first-look">
       <div className="first-look__container">
         <div className="text-container">
-          <h4>
+          <h4 className="c-med">
             Meet The <span>Culture</span> That Will Inspire You
           </h4>
-          <p>
+          <p className="c-med">
             Don’t just live, live a FULL life--live your BEST life. These
             products are an extension of your passion.
           </p>
-          <GeneralButton className="learnMore-btn" link={"www.google.com"} text="LEARN MORE" variant="yellow"/>
+          <GeneralButton
+            className="learnMore-btn"
+            link={"www.google.com"}
+            text="LEARN MORE"
+            variant="yellow"
+          />
         </div>
         <img className="hiking-woman" src={hikingWoman} alt="woman-hiking" />
       </div>

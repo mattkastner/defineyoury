@@ -9,17 +9,17 @@ export default function CultureText(props) {
         <div className="row align-self-center">
           {culerData.map((data, index) => {
             return (
-              <div className="col-md-6 mb-3 mb-md-0" key={index}>
+              <div className="col-md-6  mb-3 mb-md-0" key={index}>
                 <div className="action-container">
                   <div className="action">
                     <button
-                      className={`brand-customer__btns  ${
+                      className={`brand-customer__btns c-med  ${
                         index === 0 ? "dark" : "yellow"
                       }`}
                     >
                       {data.title}
                     </button>
-                    <p className="">{data.dec}</p>
+                    <p className="c-med">{data.dec}</p>
                   </div>
                 </div>
               </div>

@@ -1,33 +1,62 @@
 @import "../../../utilities/style.scss";
 
+$font-family__c-black: "Circular Std Black";
+$font-family__c-medium: "Circular Std Medium";
+$font-family__c-book: "Circular Std Book";
+
+.c-med {
+  font-family: $font-family__c-medium;
+}
+.c-black {
+  font-family: $font-family__c-black;
+}
+.c-book {
+  font-family: $font-family__c-book;
+}
+
 .core-products-body {
-	width: 100%;
-	height: 80vh;
-	background-color: $background-light;
+  width: 100%;
+  height: auto;
+  background-color: $background-light;
 }
 
 .title-core-products {
-	width: 100%;
-	height: 250px;
-	position: relative;
+  width: 100%;
+  height: 250px;
+  position: relative;
 }
 
-.title-core-products h2 {
-	position: absolute;
-	left: 100px;
-	top: 125px;
-	font-size: 36px;
-	font-family: $font-family--primary;
-	font-weight: 600;
+h2 {
+  // position: absolute;
+  // left: 100px;
+  // top: 125px;
+  position: relative;
+  font-size: 36px;
+  font-family: $font-family--primary;
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding-top: 150px;
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .core-products-container {
-	width: 100%;
-	height: 600px;
-	display: flex;
-	justify-content: center;
+  // width: 100%;
+  // height: 600px;
+  // display: flex;
+  // justify-content: center;
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 50px;
+  @media (max-width: 991px) {
+    padding: 0 80px;
+  }
+  @media (max-width: 500px) {
+    padding: 0 30px;
+  }
 }
 
 .product-cards {
-	@include flex;
+  @include flex;
 }

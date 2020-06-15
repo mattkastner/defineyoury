@@ -2,10 +2,22 @@
 
 .culture-view__first-look {
   position: relative;
-  height: 550px;
+  height: 54rem;
   width: 100%;
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
   @include flex(space-around);
+}
+
+.learnMore-btn {
+  background-color: red($color: #000000);
+  &:hover {
+    box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    display: none !important;
+  }
 }
 
 .left-gradient {
@@ -34,7 +46,8 @@
     width: 360px;
   }
 }
-.culture-view__first-look  {
+.culture-view__first-look {
+  background-color: rgba(0, 0, 0, 0.5);
   h4 {
     color: $light;
     font-size: 49px;
@@ -50,7 +63,10 @@
     @media (max-width: 480px) {
       font-size: 30px;
       width: 100%;
-     }
+    }
+    @media (max-width: 320px) {
+      font-size: 25px;
+    }
   }
 
   p {
@@ -58,35 +74,58 @@
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 35px;
-    @media (max-width: 767px) { 
+    @media (max-width: 768px) {
       margin-top: 0px !important;
     }
-    @media (max-width: 480px) { 
+    @media (max-width: 480px) {
       font-size: 16px;
+    }
+    @media (max-width: 320px) {
+      font-size: 13px;
     }
   }
 }
 
 .hiking-woman {
   position: absolute;
-  width: 1600px;
+  // width: 1600px;
+  width: 100%;
   height: auto;
+
   left: 0px;
-  top: -350px;
+  // top: -350px;
   z-index: -1;
+  @media (max-width: 1300px) {
+    object-fit: cover;
+    height: 100%;
+  }
 }
 
 .first-look__container {
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1400px;
-  margin: 0 auto;
-  width: 100%;
+  // max-width: 1400px;
+  // margin: 0 auto;
+  width: 1440px;
+  @media (max-width: 1600px) {
+    width: 100%;
+    padding: 0 70px;
+  }
+  @media (max-width: 500px) {
+    // padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+  }
 }
 
 .culture-view__first-look {
-  @media (max-width: 767px) {
+  background-color: rgba(0, 0, 0, 0.5);
+  @media (max-width: 768px) {
     height: 470px;
+  }
+  @media (max-width: 500px) {
+    height: 400px;
   }
   .general-button--yellow {
     padding: 20px 30px;
@@ -97,10 +136,18 @@
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
+    transition-duration: 0.5s;
+    &:hover {
+      box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;
+      -ms-transform: translateY(-3px);
+      transform: translateY(-3px);
+      -webkit-transform: translateY(-3px);
+      transition-duration: 0.5s;
+    }
     svg {
       display: none;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       padding: 10px 5px;
       height: 50px;
       max-width: 200px;
@@ -108,4 +155,3 @@
     }
   }
 }
-

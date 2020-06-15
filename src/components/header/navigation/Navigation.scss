@@ -20,9 +20,18 @@ li {
   color: $background-light;
   font-weight: 700;
 }
+.noDisplay {
+  display: none;
+}
 
 // Mobile L 425px
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 840px) {
+  .emptyDiv {
+    width: 100vw;
+    height: 200vh;
+    position: fixed;
+    z-index: 2;
+  }
   .mobile-menu {
     padding: 4px;
     display: inline;
@@ -38,7 +47,7 @@ li {
     justify-content: flex-start;
     align-items: center;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     top: 0px;
     right: -100%;
     width: 200px;
@@ -88,7 +97,7 @@ li {
     justify-content: flex-start;
     align-items: center;
     position: absolute;
-    z-index: 2;
+    // z-index: 2;
     top: 0px;
     right: -100%;
     width: 200px;

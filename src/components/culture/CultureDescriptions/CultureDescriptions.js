@@ -34,8 +34,10 @@ class CultureDescriptions extends Component {
           <div className="col-md-6 rightDiv">
             <div>
               <h1 className="headingSpacing">
-                <span className="firstHead">We Know You Want To </span>
-                <span className="d-block secondHead">Live A Prime Life</span>
+                <span className="firstHead c-book">We Know You Want To </span>
+                <span className="d-block secondHead c-black">
+                  Live A Prime Life
+                </span>
               </h1>
               <div className="images">
                 <img src={posterImg} alt="" width="100%" />
@@ -44,16 +46,16 @@ class CultureDescriptions extends Component {
                 </a>
               </div>
               <div className="content3 pb-5">
-                <p className="pt-4 p1">
-                  <span className="hidden">text</span>
+                <p className="pt-4 p1 c-med">
+                  <span className="hidden ">text</span>
                   Each of Unicity’s products are subject to meticulous research
                   and development, and several are listed in the prestigious
                   Physicians’ Desk Reference—a resource used often by doctors to
                   learn about prescription drugs and clinically proven
                   alternatives.
                 </p>
-                <p className="p1 pb-5">
-                  <span className="hidden">text</span>
+                <p className="p1 pb-5 c-med">
+                  <span className="hidden ">text</span>
                   Unicity’s products provide a range of benefits—from weight
                   loss and heart health to bone strength and vision support—and
                   can be recommended with confidence to anyone. Hundreds of

@@ -1,41 +1,73 @@
 @import "../../../utilities/style.scss";
 
 .product-guide-display-body {
-	width: 100%;
+	max-width: 1000px;
+	width:100%;
+	margin:0 auto;
 	height: 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	justify-content: center;
+	// display: flex;
+	// flex-direction: row;
+	// align-items: center;
 }
 
 .guide-picture {
-	width: 450px;
-	height: 400px;
-	margin-left: 140px;
+	// width: 450px;
+	// height: 400px;
+	max-width:450px;
+	height: auto;
+	max-height: 400px;
+	width: 100%;
+	// margin-left: 140px;
+	// margin-right:100px;
 	box-shadow: 17px 17px 100px #989898;
+
+	@media (max-width:991px) {
+		max-width:700px;
+	}
 }
 
 .product-guide-text {
-	width: 800px;
-	height: 600px;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	padding-left: 150px;
+	// width: 800px;
+	// height: 600px;
+
+	// width: 100%;
+	// height: auto;
+	// display: flex;
+	// justify-content: center;
+	// flex-direction: column;
+	// padding-left: 150px;
+	padding-left:50px;
+margin-left: auto;
+max-width:450px;
+	width: 100%;
+
+@media (max-width:991px) {
+	padding-left: 15px;
+	margin-left:0;
+	max-width: 700px;
+	margin-top:60px;
+}
+
+	////
 }
 
 .product-guide-topics {
-	width: 300px;
+	// width: 300px;
+	width:auto;
 	height: 50px;
 	font-family: $font-family__primary;
 	color: $dark;
 	font-weight: 600;
 	font-size: 30px;
+	// margin-top: 30px;
 }
 
 .benefit-text {
-	width: 600px;
-	height: 90px;
+	margin-bottom: 30px;
+
+	width: 100%;
+	height: auto;
 	font-size: 16px;
 	font-family: $font-family__primary;
 	line-height: 25px;
@@ -43,7 +75,7 @@
 
 .suggested-use-text {
 	width: 600px;
-	height: 90px;
+	height: auto;
 	font-size: 16px;
 	font-family: $font-family__primary;
 	line-height: 25px;
@@ -51,7 +83,7 @@
 
 .audience-text {
 	width: 600px;
-	height: 110px;
+	height: auto;
 	font-size: 16px;
 	font-family: $font-family__primary;
 	line-height: 25px;

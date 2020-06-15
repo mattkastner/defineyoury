@@ -2,9 +2,13 @@
 
 .nav-link {
   position: relative;
-  font-size: 16px;
-  font-weight: 700;
-  color: $background-light;
+  font-size: 14px;
+  font-weight: 500;
+  // color: $background-light;
+  color: $header-font--color;
+  &:hover {
+    color: $header-font--color--hover;
+  }
   margin: 0 10px;
   &:hover {
     .nav-indicator {
@@ -15,10 +19,10 @@
 }
 .nav-indicator {
   position: absolute;
-  bottom: -7px;
+  bottom: -2px;
   left: 0;
   width: 0;
-  height: 3px;
+  height: 2px;
   transition: width 400ms;
 }
 
@@ -30,6 +34,7 @@
 // Mobile L 425px
 @media screen and (max-width: 578px) {
   .nav-link {
+    margin: 0 0px;
     position: relative;
     // height: 15px;
     padding: 7px 0;
